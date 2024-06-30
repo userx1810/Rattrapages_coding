@@ -5,7 +5,21 @@ const API_URL = `${BASE_URL}movie/popular?api_key=${API_KEY}`;
 const TOP_RATED = `${BASE_URL}movie/top_rated?api_key=${API_KEY}`;
 const searchUrl = BASE_URL + "/search/movie?" + API_KEY;
 
-// import styles bundle
+import Swiper from "/node_modules/swiper/swiper-bundle.min.js";
+
+const swiper = new Swiper(".swiper-container", {
+	slidesPerView: 1,
+	spaceBetween: 10,
+	loop: true,
+	pagination: {
+		el: ".swiper-pagination",
+		clickable: true,
+	},
+	navigation: {
+		nextEl: ".swiper-button-next",
+		prevEl: ".swiper-button-prev",
+	},
+});
 
 const genres = {
 	genres: [
