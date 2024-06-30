@@ -5,6 +5,9 @@ const API_URL = `${BASE_URL}movie/popular?api_key=${API_KEY}`;
 const TOP_RATED = `${BASE_URL}movie/top_rated?api_key=${API_KEY}`;
 const searchUrl = BASE_URL + "/search/movie?" + API_KEY;
 
+
+ //swiper pour afficher les films populaires
+
 import Swiper from "/node_modules/swiper/swiper-bundle.min.js";
 
 const swiper = new Swiper(".swiper-container", {
@@ -106,6 +109,8 @@ const form = document.getElementById("form");
 const search = document.getElementById("search");
 const actionbutton = document.getElementById("actionbutton");
 const adventurebutton = document.getElementById("adventurebutton");
+
+//pour les boutons de genre ( aventure action)
 actionbutton.addEventListener("click", () => {
   getFilmsOfGenre(28);
 });
@@ -113,6 +118,7 @@ adventurebutton.addEventListener("click", () => {
   getFilmsOfGenre(12);
 });
 
+//pour recup les films en fonction d'un URL
 function getFilm(url) {
   fetch(url)
     .then((res) => res.json())
@@ -124,12 +130,15 @@ function getFilm(url) {
       console.error("Error fetching films:", error);
     });
 }
+//  pour recup un film d'un genre specifique
 
 function getFilmsOfGenre(genreId) {
   const genreUrl = `${BASE_URL}discover/movie?api_key=${API_KEY}&with_genres=${genreId}`;
   getFilm(genreUrl);
 }
 
+
+//  pour recup les films pour le swiper
 function getFilmSwiper(url) {
   fetch(url)
     .then((res) => res.json())
@@ -142,10 +151,11 @@ function getFilmSwiper(url) {
     });
 }
 
+//pour afficher les films dans le swiper
+
 function displaySwiper(films) {
   const swiper = document.querySelector(".swiper-wrapper");
   swiper.innerHTML = ""; // Clear previous content
-
   films.forEach((film) => {
     const { title, poster_path, overview, vote_average } = film;
 
