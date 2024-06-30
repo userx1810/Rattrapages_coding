@@ -2,7 +2,7 @@ const API_KEY = "e71f42ea1955f2d75f591e7ee3404308";
 const BASE_URL = "https://api.themoviedb.org/3/";
 const IMG_URL = "https://image.tmdb.org/t/p/w500/";
 const API_URL = `${BASE_URL}movie/popular?api_key=${API_KEY}`;
-
+const TOP_RATED = `${BASE_URL}movie/top_rated?api_key=${API_KEY}`;
 const searchUrl = BASE_URL + "/search/movie?" + API_KEY;
 
 const genres = {
@@ -101,6 +101,40 @@ function getFilm(url) {
 		});
 }
 
+function getFilmSwiper(url) {
+	fetch(url)
+		.then((res) => res.json())
+		.then((data) => {
+			displaySwiper(data.results);
+			console.log(data.results);
+		})
+		.catch((error) => {
+			console.error("Error fetching films:", error);
+		});
+}
+
+function displaySwiper(films) {
+	const swiper = document.querySelector(".swiper-wrapper");
+	swiper.innerHTML = ""; // Clear previous content
+
+	films.forEach((film) => {
+		const { title, poster_path, overview, vote_average } = film;
+
+		const swiperSlide = document.createElement("div");
+		swiperSlide.classList.add("swiper-slide");
+
+		swiperSlide.innerHTML = `
+      <img src="${IMG_URL}${poster_path}" alt="${title}" />
+      <div class="swiper-slide-info">
+        <h3>${title}</h3>
+        <span class="note">${vote_average}</span>
+      </div>
+    `;
+
+		swiper.appendChild(swiperSlide);
+	});
+}
+
 function displayFilm(films) {
 	const filmscontainer = document.querySelector("#filmscontainer");
 	filmscontainer.innerHTML = ""; // Clear previous content
@@ -130,6 +164,7 @@ function displayFilm(films) {
 }
 
 getFilm(API_URL);
+getFilmSwiper(TOP_RATED);
 
 form.addEventListener("submit", (e) => {
 	e.preventDefault();
