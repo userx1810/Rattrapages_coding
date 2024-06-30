@@ -1,54 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta
-			name="viewport"
-			content="width=device-width, initial-scale=1.0" />
-		<link
-			rel="stylesheet"
-			href="css/accueil.css" />
-		<title>Home</title>
-	</head>
-	<body>
-		<header>
-			<form id="barre">
-				<input
-					type="text"
-					placeholder="search"
-					id="search" />
-			</form>
-		</header>
-		<div class="tag">Action</div>
-		<div class="tag">Adventure</div>
-		<div class="tag">Action</div>
-		<div class="tag">Action</div>
-		<div class="tag">Action</div>
-		<div class="tag">Action</div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="css/accueil.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <title>Home</title>
+  </head>
+  <body>
+    <header>
+      <form id="barre">
+        <input
+          type="text"
+          placeholder="search"
+          id="search" />
+      </form>
+    </header>
+    <div class="tag">Action</div>
+    <div class="tag">Adventure</div>
+    <div class="tag">Action</div>
+    <div class="tag">Action</div>
+    <div class="tag">Action</div>
+    <div class="tag">Action</div>
 
-		<main>
-			<div class="swiper">
-				<!-- Additional required wrapper -->
-				<div class="swiper-wrapper">
-					<!-- Slides -->
-					<div class="swiper-slide">Slide 1</div>
-					<div class="swiper-slide">Slide 2</div>
-					<div class="swiper-slide">Slide 3</div>
-					...
-				</div>
-				<!-- If we need pagination -->
-				<div class="swiper-pagination"></div>
+    <main>
+      <div class="swiper">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide">Slide 1</div>
+          <div class="swiper-slide">Slide 2</div>
+          <div class="swiper-slide">Slide 3</div>
+          <!-- ... -->
+        </div>
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
 
-				<!-- If we need navigation buttons -->
-				<div class="swiper-button-prev"></div>
-				<div class="swiper-button-next"></div>
-			</div>
-			<div id="filmscontainer"></div>
-	</main>
-	<link
-		rel="stylesheet"
-		href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+        <!-- If we need navigation buttons -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+      </div>
+      <div id="filmscontainer"></div>
+    </main>
 
-	<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-	<script type="module" src="js/accueil.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="js/accueil.js"></script>
+  </body>
 </html>
