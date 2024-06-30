@@ -98,6 +98,14 @@ const genres = {
 const filmscontainer = document.getElementById("filmscontainer");
 const form = document.getElementById("form");
 const search = document.getElementById("search");
+const actionbutton = document.getElementById("actionbutton");
+const adventurebutton = document.getElementById("adventurebutton");
+actionbutton.addEventListener("click", () => {
+	getFilmsOfGenre(28);
+});
+adventurebutton.addEventListener("click", () => {
+	getFilmsOfGenre(12);
+});
 
 function getFilm(url) {
 	fetch(url)
@@ -109,6 +117,11 @@ function getFilm(url) {
 		.catch((error) => {
 			console.error("Error fetching films:", error);
 		});
+}
+
+function getFilmsOfGenre(genreId) {
+	const genreUrl = `${BASE_URL}discover/movie?api_key=${API_KEY}&with_genres=${genreId}`;
+	getFilm(genreUrl);
 }
 
 function getFilmSwiper(url) {
