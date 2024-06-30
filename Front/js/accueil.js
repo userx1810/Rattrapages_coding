@@ -5,6 +5,9 @@ const API_URL = `${BASE_URL}movie/popular?api_key=${API_KEY}`;
 const TOP_RATED = `${BASE_URL}movie/top_rated?api_key=${API_KEY}`;
 const searchUrl = BASE_URL + "/search/movie?" + API_KEY;
 
+import Swiper from "/swiper.js";
+
+// import styles bundle
 const swiper = new Swiper(".swiper-container", {
 	slidesPerView: 1,
 	spaceBetween: 10,
