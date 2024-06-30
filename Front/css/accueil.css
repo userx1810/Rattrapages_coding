@@ -34,6 +34,12 @@ main {
 	justify-content: center;
 }
 
+#filmscontainer {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
 .film {
 	display: flex;
 	flex-direction: column;
@@ -67,6 +73,11 @@ main {
 .film-info .note {
 	color: #9b5ba5;
 	margin-top: 5px;
+}
+
+.swiper {
+	width: 600px;
+	height: 300px;
 }
 
 .synopsis {

@@ -1,128 +1,57 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/accueil.css" />
-    <title>Home</title>
-  </head>
-  <body>
-    <header>
-      <form id="barre">
-        <input type="text" placeholder="search" id="search" />
-      </form>
-    </header>
-    <div class="tag">Action</div>
-    <div class="tag">Adventure</div>
-    <div class="tag">Action</div>
-    <div class="tag">Action</div>
-    <div class="tag">Action</div>
-    <div class="tag">Action</div>
+	<head>
+		<meta charset="UTF-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0" />
+		<link
+			rel="stylesheet"
+			href="css/accueil.css" />
+		<title>Home</title>
+	</head>
+	<body>
+		<header>
+			<form id="barre">
+				<input
+					type="text"
+					placeholder="search"
+					id="search" />
+			</form>
+		</header>
+		<div class="tag">Action</div>
+		<div class="tag">Adventure</div>
+		<div class="tag">Action</div>
+		<div class="tag">Action</div>
+		<div class="tag">Action</div>
+		<div class="tag">Action</div>
 
-    <main>
-      <div class="film">
-        <img
-          src="https://th.bing.com/th/id/OIP.ZjnYm6rdPo06qgIaN7NCaAAAAA?rs=1&pid=ImgDetMain"
-          alt="image"
-        />
-      </div>
+		<main>
+			<div class="swiper">
+				<!-- Additional required wrapper -->
+				<div class="swiper-wrapper">
+					<!-- Slides -->
+					<div class="swiper-slide">Slide 1</div>
+					<div class="swiper-slide">Slide 2</div>
+					<div class="swiper-slide">Slide 3</div>
+					...
+				</div>
+				<!-- If we need pagination -->
+				<div class="swiper-pagination"></div>
 
-      <div class="film-info">
-        <h3>Titre de film</h3>
-        <span class="note">3.8</span>
-      </div>
+				<!-- If we need navigation buttons -->
+				<div class="swiper-button-prev"></div>
+				<div class="swiper-button-next"></div>
 
-      <div class="synopsis">
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Obcaecati
-        officia nisi itaque ullam illum mollitia quos? Dolores quia esse cumque
-        commodi neque quod id placeat officia sed dolore? Dolor, dicta!
-      </div>
-      <div class="film">
-        <img
-          src="https://th.bing.com/th/id/OIP.ZjnYm6rdPo06qgIaN7NCaAAAAA?rs=1&pid=ImgDetMain"
-          alt="image"
-        />
-      </div>
+				<!-- If we need scrollbar -->
+				<div class="swiper-scrollbar"></div>
+			</div>
+			<div id="filmscontainer"></div>
+	</main>
+	<link
+		rel="stylesheet"
+		href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 
-      <div class="film-info">
-        <h3>Titre de film</h3>
-        <span class="note">3.8</span>
-      </div>
-
-      <div class="synopsis">
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Obcaecati
-        officia nisi itaque ullam illum mollitia quos? Dolores quia esse cumque
-        commodi neque quod id placeat officia sed dolore? Dolor, dicta!
-      </div>
-      <div class="film">
-        <img
-          src="https://th.bing.com/th/id/OIP.ZjnYm6rdPo06qgIaN7NCaAAAAA?rs=1&pid=ImgDetMain"
-          alt="image"
-        />
-      </div>
-
-      <div class="film-info">
-        <h3>Titre de film</h3>
-        <span class="note">3.8</span>
-      </div>
-
-      <div class="synopsis">
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Obcaecati
-        officia nisi itaque ullam illum mollitia quos? Dolores quia esse cumque
-        commodi neque quod id placeat officia sed dolore? Dolor, dicta!
-      </div>
-      <div class="film">
-        <img
-          src="https://th.bing.com/th/id/OIP.ZjnYm6rdPo06qgIaN7NCaAAAAA?rs=1&pid=ImgDetMain"
-          alt="image"
-        />
-      </div>
-
-      <div class="film-info">
-        <h3>Titre de film</h3>
-        <span class="note">3.8</span>
-      </div>
-
-      <div class="synopsis">
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Obcaecati
-        officia nisi itaque ullam illum mollitia quos? Dolores quia esse cumque
-        commodi neque quod id placeat officia sed dolore? Dolor, dicta!
-      </div>
-      <div class="film">
-        <img
-          src="https://th.bing.com/th/id/OIP.ZjnYm6rdPo06qgIaN7NCaAAAAA?rs=1&pid=ImgDetMain"
-          alt="image"
-        />
-      </div>
-
-      <div class="film-info">
-        <h3>Titre de film</h3>
-        <span class="note">3.8</span>
-      </div>
-
-      <div class="synopsis">
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Obcaecati
-        officia nisi itaque ullam illum mollitia quos? Dolores quia esse cumque
-        commodi neque quod id placeat officia sed dolore? Dolor, dicta!
-      </div>
-      <div class="film">
-        <img
-          src="https://th.bing.com/th/id/OIP.ZjnYm6rdPo06qgIaN7NCaAAAAA?rs=1&pid=ImgDetMain"
-          alt="image"
-        />
-      </div>
-
-      <div class="film-info">
-        <h3>Titre de film</h3>
-        <span class="note">3.8</span>
-      </div>
-
-      <div class="synopsis">
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Obcaecati
-        officia nisi itaque ullam illum mollitia quos? Dolores quia esse cumque
-        commodi neque quod id placeat officia sed dolore? Dolor, dicta!
-      </div>
-    </main>
-  </body>
-  <script src="js/accueil.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+	<script src="js/accueil.js"></script>
 </html>
