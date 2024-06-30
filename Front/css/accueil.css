@@ -78,8 +78,8 @@ main {
   color: #4a4a4a;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   text-align: justify;
-  height: 150px; 
-  overflow-y: auto; 
+  height: 150px;
+  overflow-y: auto;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
