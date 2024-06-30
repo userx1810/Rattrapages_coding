@@ -1,0 +1,164 @@
+body {
+  background-color: #f7f6f6;
+  color: #4a4a4a;
+  font-family: "Arial", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: #9b5ba5;
+  color: white;
+}
+
+#barre {
+  display: flex;
+  align-items: space-around;
+}
+
+.logocontainer {
+  display: flex;
+  align-items: center;
+  width: 5%;
+}
+
+.logo {
+  width: 69px;
+  margin-right: 10px;
+}
+
+#search {
+  padding: 5px;
+  width: 60%;
+  border: 1px solid #e0e0e0;
+  border-radius: 5px;
+  background-color: #f7f6f6;
+  color: #4a4a4a;
+}
+
+main {
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.profile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.profile-info {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.profile-pic img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 20px;
+}
+
+.profile-details {
+  text-align: left;
+}
+
+.profile-details h2 {
+  margin-bottom: 10px;
+  color: #4a4a4a;
+}
+
+.profile-details p {
+  margin: 0;
+  color: #4a4a4a;
+}
+
+.watched-films {
+  margin-top: 20px;
+}
+
+#filmscontainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.film {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid #e0e0e0;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 10px;
+  background-color: #ffffff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 280px;
+}
+
+.film img {
+  width: 100%;
+  border-radius: 5px;
+}
+
+.film-info {
+  text-align: center;
+  margin-top: 10px;
+  margin-left: 0px;
+}
+
+.film-info h3 {
+  color: #4a4a4a;
+  margin: 0;
+}
+
+.film-info .note {
+  color: #9b5ba5;
+  margin-top: 5px;
+}
+
+.footer {
+  background-color: #1c1c1c;
+  color: #757575;
+  padding: 40px 0;
+  font-family: "Arial", sans-serif;
+}
+
+.footer-cols {
+  display: flex;
+  justify-content: space-around;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-col {
+  list-style-type: none;
+}
+
+.footer-col a {
+  color: #757575;
+  text-decoration: none;
+  line-height: 2;
+  display: block;
+  transition: color 0.3s ease;
+}
+
+.footer-col a:hover {
+  color: #9b5ba5;
+}
+
+.footer-bottom {
+  text-align: center;
+  padding-top: 10px;
+  border-top: 1px solid #757575;
+}
+
+.footer-bottom p {
+  color: #757575;
+}
